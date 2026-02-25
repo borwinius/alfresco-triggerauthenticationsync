@@ -29,7 +29,11 @@ import org.alfresco.repo.site.SiteModel;
 import org.alfresco.service.cmr.security.AuthenticationService;
 import org.alfresco.service.cmr.security.AuthorityService;
 import org.alfresco.service.cmr.site.SiteService;
-import org.apache.log4j.Logger;
+// old log4j must be convert to slf4j
+//import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import org.quartz.JobDetail;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerFactory;
@@ -50,7 +54,8 @@ import org.springframework.extensions.webscripts.WebScriptResponse;
  */
 public class StartPeopleSyncWebScript extends AbstractWebScript implements ApplicationContextAware {
 
-	private final static Logger log = Logger.getLogger(StartPeopleSyncWebScript.class);
+	// private final static Logger log = Logger.getLogger(StartPeopleSyncWebScript.class);
+	private final static Logger log = LoggerFactory.getLogger(StartPeopleSyncWebScript.class);
 	private final static String PARAM_SITE_ID = "siteId";
 
 	JobDetail jobdetailbean;
