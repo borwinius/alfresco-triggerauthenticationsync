@@ -38,6 +38,10 @@
 		
 		<alfresco.version>6.0.7-ga</alfresco.version>
         <alfresco.repo.version>6.0</alfresco.repo.version>
+
+		<!-- this is for alfresco 25.3 / rb / 2026 -->
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 		
 	</properties>
 
