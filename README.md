@@ -14,3 +14,7 @@ More Information and screenshots: http://www.form4.de/softwareentwicklung/alfres
 ## Versions
 
 * tested with alfresco 25.3 in docker
+
+## Compilation
+``mvn clean package``
+
