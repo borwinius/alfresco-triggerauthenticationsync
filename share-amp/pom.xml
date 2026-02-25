@@ -43,6 +43,10 @@
 		<license.addSvnKeyWords>false</license.addSvnKeyWords>
 		<license.canUpdateDescription>true</license.canUpdateDescription>
 		<license.canUpdateCopyright>true</license.canUpdateCopyright>
+        <!-- this is for alfresco 25.3 -->
+		<maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+
 	</properties>
 
 	<distributionManagement>
